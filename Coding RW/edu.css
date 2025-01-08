@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arial', sans-serif;
+  background-color: lightgrey;
+  color: #333333;
+  line-height: 1.6;
+  background-image: url('orangbackground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navbar {
+  background-color: black;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  height: 60px;
+}
+
+.logo {
+  color: #FF4500;
+  font-size: 24px;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu a {
+  color: #FF4500;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background-color: #A9A9A9;
+}
+
+.menu li.active a {
+  background-color: white;
+  color: #FF4500;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.main {
+  text-align: center;
+  padding: 100px 20px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: lightgrey;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #FF4500;
+  margin-bottom: 30px;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.school {
+  background: #f2f2f2;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.school-logo {
+  width: 100px;
+  height: 105px;
+  margin-bottom: 10px;
+}
+
+.school h2 {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.school p {
+  color: #555;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+.school strong {
+  color: #FF4500;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: #FF4500;
+  width: 100%;
+}

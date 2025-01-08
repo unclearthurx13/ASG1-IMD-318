@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arial', sans-serif;
+  background-color: lightgrey;
+  color: #333333;
+  line-height: 1.6;
+  background-image: url('orangbackground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navbar {
+  background-color: black;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  height: 60px;
+}
+
+.logo {
+  color: #FF4500;
+  font-size: 24px;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu a {
+  color: #FF4500;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background-color: #A9A9A9;
+}
+
+.menu li.active a {
+  background-color: white;
+  color: #FF4500;
+}
+
+.menu li.active a {
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.main {
+  text-align: center;
+  padding: 100px 20px;
+  margin-top: 80px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.game-clips {
+  background-color: lightgrey;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.game-clips h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #FF4500;
+}
+
+.clip-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.clip {
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+}
+
+.clip video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+li h1 {
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: #FF4500;
+  width: 100%;
+}
